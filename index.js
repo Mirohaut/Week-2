@@ -1,22 +1,22 @@
-'use strict';
+// 'use strict';
 
-const express = require('express');
-const app = express();
-const port = 3009;
-const catRouter = require('./routes/catRouter');
-const userRouter = require('./routes/userRouter');
+// const express = require('express');
+// const app = express();
+// const port = 3009;
+// const catRouter = require('./routes/catRouter');
+// const userRouter = require('./routes/userRouter');
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
-app.get('/', (req, res) => {
-  res.send(
-    ''
-  );
-});
+// app.get('/', (req, res) => {
+//   res.send(
+//     ''
+//   );
+// });
 
-app.use('/cat', catRouter);
-app.use('/user', userRouter);
+// app.use('/cat', catRouter);
+// app.use('/user', userRouter);
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
-})
+// app.listen(port, () => {
+//   console.log(`Example app listening at http://localhost:${port}`);
+// })
