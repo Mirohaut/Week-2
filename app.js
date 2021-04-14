@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-app.use('/cat', catRouter);
+// app.use('/cat', catRouter);
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
