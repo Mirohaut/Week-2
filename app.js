@@ -10,7 +10,7 @@ const port = 3000;
 //   username: process.env.DB_USER,
 //   password: process.env.DB_PASS
 // })
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
