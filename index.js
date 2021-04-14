@@ -2,7 +2,7 @@
 
 const express = require('express');
 const app = express();
-const port = 3001;
+const port = 80;
 const catRouter = require('./routes/catRouter');
 const userRouter = require('./routes/userRouter');
 
