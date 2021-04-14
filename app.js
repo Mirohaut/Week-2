@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const catRouter = require('./routes/catRouter');
-const db = require('db')
+const db = require('./database/db')
 db.connect({
   host: process.env.DB_METROPOLIA,
   username: process.env.DB_USER,
