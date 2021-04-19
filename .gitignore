@@ -78,4 +78,8 @@ typings/
 #DynamoDB Local files 
 .dynamodb/ 
 
+#https
+.certerequest/
+.ssl-cert.perm
+.ssl-key-pem
 .env
