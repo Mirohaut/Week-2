@@ -30,11 +30,11 @@ app.get('/', (req, res) => {
 res.send('Hello Secure World!');
 });
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+// app.get('/', (req, res) => {
+//   res.send('Hello World!');
+// });
 
-app.use('/cat', catRouter);
+// app.use('/cat', catRouter);
 
 const http = require('http');
 
