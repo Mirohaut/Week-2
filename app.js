@@ -7,7 +7,7 @@ const catRouter = require('./routes/catRouter');
 const https = require('https');
 const fs = require('fs');
 const sslkey = fs.readFileSync('ssl-key.pem');
-const sslcert = fs.readFileSync('ssl-cert.pem')
+const sslcert = fs.readFileSync('ssl-cert.pem');
 
 // const db = require('./database/db')
 // db.connect({
