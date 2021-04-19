@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 const catRouter = require('./routes/catRouter');
 const userRouter = require('./routes/userRouter');
-
+println ("moui");
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
