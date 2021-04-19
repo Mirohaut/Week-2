@@ -17,6 +17,7 @@ app.get('/', (req, res) => {
 app.use('/cat', catRouter);
 app.use('/user', userRouter);
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
-})
+http.createServer((req, res) => {
+  res.writeHead(301, { 'Location': 'https://localhost:8000' + req.url });
+  res.end();
+}).listen(3000);
