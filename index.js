@@ -6,6 +6,7 @@ const port = 3000;
 const catRouter = require('./routes/catRouter');
 const userRouter = require('./routes/userRouter');
 app.use(express.static('public'));
+const http = require('http');
 
 app.get('/', (req, res) => {
   res.send(
