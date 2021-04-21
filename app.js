@@ -22,17 +22,15 @@ const options = {
   cert: sslcert
 };
 
-const app = express();
-
 https.createServer(options, app).listen(8000);
 
 app.get('/', (req, res) => {
 res.send('Hello Secure World!');
 });
 
-app.get('/', (req, res) => {
-  res.send('Hello Secuuure World!');
-});
+// app.get('/', (req, res) => {
+//   res.send('Hello World!');
+// });
 
 // app.use('/cat', catRouter);
 
